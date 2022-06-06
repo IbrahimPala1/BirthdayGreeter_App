@@ -1,19 +1,18 @@
-feature "building initial infastrcuture" do 
+# frozen_string_literal: true
 
-    scenario "Welcome message" do 
-        visit ('/')
-        expect(page).to have_content 'Welcome to Birthday Greeter'
-    end 
+feature 'building initial infastrcuture' do
+  scenario 'Welcome message' do
+    visit('/')
+    expect(page).to have_content 'Welcome to Birthday Greeter'
+  end
 
-    scenario "submitting names" do 
-        visit('/')
-        expect(page).to have_content 'Enter your name:'
-    end 
+  scenario 'submitting names' do
+    visit('/')
+    expect(page).to have_content 'Enter your name:'
+  end
 
-    scenario "entering date of birth" do 
-        visit ('/')
-        expect(page).to have_content 'Enter your date of birth:'
-    end 
-end 
-     
-        
+  scenario 'entering date of birth' do
+    visit('/')
+    expect(page).to have_content 'Select your date of birth:'
+  end
+end
